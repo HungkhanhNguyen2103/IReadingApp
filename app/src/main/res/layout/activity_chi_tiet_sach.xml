@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietSachActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Việt Nam Vô Địch!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tác giả: Waka"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/bookRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá: 5/5 | 345 người nghe"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- Nút Bản đầy đủ -->
+        <Button
+            android:id="@+id/fullVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bản đầy đủ"
+            android:layout_marginEnd="20dp"/>
+
+        <!-- Nút Nghe tóm tắt -->
+        <Button
+            android:id="@+id/fullVersionSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bản tóm tắt"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/listenSummaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:text="Nghe tóm tắt" />
+
+    <TextView
+        android:id="@+id/bookCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giáo dục - Văn hóa và Xã hội"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/reviewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Độc giả đánh giá"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/starRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 ★★★★★"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/reviewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 đánh giá"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+        <TextView
+            android:id="@+id/reviewerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kim Oanh"
+            android:paddingStart="8dp"/>
+
+        <TextView
+            android:id="@+id/reviewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06/01/2025"
+            android:paddingStart="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reviewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hay quá, cảm ơn Waka"
+        android:paddingTop="4dp"/>
+
+    <Button
+        android:id="@+id/writeReviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="3sp"
+        android:text="Viết đánh giá" />
+
+    <Button
+        android:id="@+id/seeAllReviewsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem tất cả đánh giá"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/relatedBooksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Có thể bạn thích"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/suggestedBookImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:scaleType="centerCrop"/>
+
+        <!-- Tên sách hiển thị dưới hình ảnh -->
+        <TextView
+            android:id="@+id/suggestedBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="Tên sách gợi ý"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
