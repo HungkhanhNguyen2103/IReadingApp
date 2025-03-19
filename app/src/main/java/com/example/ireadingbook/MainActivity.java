@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         apiCaller = RetrofitClient.getInstance(Utils.BASE_URL, this).create(IAppApiCaller.class);
         Call<ReponderModel<Category>> call = apiCaller.getCategories();
+        int test = 0;
         call.enqueue(new Callback<ReponderModel<Category>>() {
             @Override
             public void onResponse(Call<ReponderModel<Category>> call, Response<ReponderModel<Category>> response) {
